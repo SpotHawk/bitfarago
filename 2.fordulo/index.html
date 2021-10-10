@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" href="style.css" rel="stylesheet">
+        <link type="image/png" href="favicon.png" rel="icon">
+        <title>3B 2021</title>
+    </head>
+    <body>
+        
+        <div id = "header">
+            <p>POGramozók</p>
+            <hr/>
+        </div>
+
+        <div id = "menu">
+            <p>
+                <input type="button" value="Alap pálya" onclick="AlapPalya()">
+                <input type="button" value="Pálya generálás" onclick="RandomPalya()">
+                <input type="button" value="Segítség" onclick="Segitseg()">
+            </p>
+            <p id = "erzekelohelyzete">A legközelebbi érzékelő: </p>
+            <p id = "messagebox"></p>
+        </div>
+
+        <table id = "mezo">
+        </table>
+
+        <script src="main.js"></script>
+    </body>
+</html>

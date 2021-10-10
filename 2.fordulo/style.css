@@ -1,0 +1,23 @@
+#menu{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 15%;
+    font-size: 25px;
+}
+#mezo{
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+}
+#mezo td{
+    border-style: none;
+    background-color: gray;
+    padding: 15px;
+}
+#messagebox{
+    text-align: center;
+}
+#erzekelohelyzete{
+    text-align: center;
+}
