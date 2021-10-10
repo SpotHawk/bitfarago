@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type = "text/css" href="film_style.css" rel="stylesheet">
+        <link type="image/png" href="favicon.png" rel="icon">
+        <script type="text/javascript" src="filmadatok.json"></script>
+        <title>3B 2021</title>
+    </head>
+    <body>
+        <div id = "header">
+            <p>Filmajánló</p>
+            <hr/>
+        </div>
+
+        <table>
+            <tr id = "elsosor">
+                <td colspan="2">Kategória kiválasztása</td>
+            </tr>
+            <tr id = "masodiksor">
+                <td>Látni kívánt kategóriájú filmek</td>
+                <td>Elrejtendő kategóriájú filmek</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="checkboxes">
+                        <input type="checkbox" value="dráma", name="option1" id = "option1" class="show">
+                        <label for = "option1">Dráma</label>
+                        <input type="checkbox" value="vígjáték", name="option2" id = "option2" class="show">
+                        <label for = "option2">Vígjáték</label>
+                        <input type="checkbox" value="romantikus", name="option3" id = "option3" class="show">
+                        <label for = "option3">Romantikus</label>
+                        <input type="checkbox" value="sci-fi", name="option4" id = "option4" class="show">
+                        <label for = "option4">Sci-Fi</label>
+                    </p>
+                    <p class="checkboxes">
+                        <input type="checkbox" value="horror", name="option5" id = "option5" class="show">
+                        <label for = "option5">Horror</label>
+                        <input type="checkbox" value="akció", name="option6" id = "option6" class="show">
+                        <label for = "option6">Akció</label>
+                        <input type="checkbox" value="kaland", name="option7" id = "option7" class="show">
+                        <label for = "option7">Kaland</label>
+                        <input type="checkbox" value="thriller", name="option8" id = "option8" class="show">
+                        <label for = "option8">Thriller</label>
+                        <input type="checkbox" value="krimi", name="option9" id = "option9" class="show">
+                        <label for = "option9">Krimi</label>
+                    </p>
+                    <p class="checkboxes">
+                        <input type="checkbox" value="rejtély", name="option10" id = "option10" class="show">
+                        <label for = "option10">Rejtély</label>
+                        <input type="checkbox" value="fantasy", name="option11" id = "option11" class="show">
+                        <label for = "option11">Fantasy</label>
+                        <input type="checkbox" value="time-travel film", name="option12" id = "option12" class="show">
+                        <label for = "option12">Time-travel film</label>
+                        <input type="checkbox" value="ifjúsági", name="option13" id = "option13" class="show">
+                        <label for = "option13">Ifjúsági</label>
+                        </p>
+                        <p class="checkboxes">
+                        <input type="checkbox" value="western", name="option14" id = "option14" class="show">
+                        <label for = "option14">Western</label>
+                        <input type="checkbox" value="háborús film", name="option15" id = "option15" class="show">
+                        <label for = "option15">Háborús film</label>
+                        <input type="checkbox" value="tragikomédia", name="option16" id = "option16" class="show">
+                        <label for = "option16">Tragikomédia</label> 
+                    </p>
+                    <p class="checkboxes">                                       
+                        <input type="checkbox" value="haverfilm", name="option17" id = "option17" class="show">
+                        <label for = "option17">Haverfilm</label>
+                        <input type="checkbox" value="börtönfilm", name="option18" id = "option18" class="show">
+                        <label for = "option18">Börtönfilm</label>
+                        <input type="checkbox" value="irodalmi adaptáció", name="option19" id = "option19" class="show">
+                        <label for = "option19">Irodalmi adaptáció</label>
+                    </p>
+                    <p class="checkboxes">
+                        <input type="checkbox" value="regény alapján készült", name="option20" id = "option20" class="show">
+                        <label for = "option20">Regény alapján készült</label>
+                        <input type="checkbox" value="könyv alapján készült", name="option21" id = "option21" class="show">
+                        <label for = "option21">Könyv alapján készült</label>
+                        </p>
+                        <p class="checkboxes">
+                        <input type="checkbox" value="felnőttéválás-történet", name="option22" id = "option22" class="show">
+                        <label for = "option22">Felnőttéválás-történet</label>
+                        <input type="checkbox" value="életrajzi film", name="option23" id = "option23" class="show">
+                        <label for = "option23">Életrajzi film</label>
+                        <input type="checkbox" value="flashback film", name="option24" id = "option24" class="show">
+                        <label for = "option24">Flashback-film</label>
+                    </p>
+                    <p class="checkboxes">
+                        <input type="checkbox" value="posztapokaliptikus film", name="option25" id = "option25" class="show">
+                        <label for = "option25">Posztapokaliptikus film</label>
+                        <input type="checkbox" value="disztópikus film", name="option26" id = "option26" class="show">
+                        <label for = "option26">Disztópikus film</label>
+                        <input type="checkbox" value="gengszterfilm", name="option27" id = "option27" class="show">
+                        <label for = "option27">Gengszterfilm</label>  
+                    </p>
+                    <p class="checkboxes">
+                        <input type="checkbox" value="pszichothriller", name="option28" id = "option28" class="show">
+                        <label for = "option28">Pszichothriller</label>                
+                        <input type="checkbox" value="musical", name="option29" id = "option29" class="show">
+                        <label for = "option29">Musical</label>
+                        <input type="checkbox" value="sportfilm", name="option30" id = "option30" class="show">
+                        <label for = "option30">Sportfilm</label>
+                        <input type="checkbox" value="disztópikus film", name="option31" id = "option31" class="show">
+                        <label for = "option31">Disztópikus film</label>
+                    </p>
+                </td>
+                <td>
+                    <p class="checkboxes">
+                        <input type="checkbox" value="dráma", name="option1" id = "option1" class="hide">
+                        <label for = "option1">Dráma</label>
+                        <input type="checkbox" value="vígjáték", name="option2" id = "option2" class="hide">
+                        <label for = "option2">Vígjáték</label>
+                        <input type="checkbox" value="romantikus", name="option3" id = "option3" class="hide">
+                        <label for = "option3">Romantikus</label>
+                        <input type="checkbox" value="sci-fi", name="option4" id = "option4" class="hide">
+                        <label for = "option4">Sci-Fi</label>
+                    </p>
+                    <p class="checkboxes">
+                        <input type="checkbox" value="horror", name="option5" id = "option5" class="hide">
+                        <label for = "option5">Horror</label>
+                        <input type="checkbox" value="akció", name="option6" id = "option6" class="hide">
+                        <label for = "option6">Akció</label>
+                        <input type="checkbox" value="kaland", name="option7" id = "option7" class="hide">
+                        <label for = "option7">Kaland</label>
+                        <input type="checkbox" value="thriller", name="option8" id = "option8" class="hide">
+                        <label for = "option8">Thriller</label>
+                        <input type="checkbox" value="krimi", name="option9" id = "option9" class="hide">
+                        <label for = "option9">Krimi</label>
+                    </p>
+                    <p class="checkboxes">
+                        <input type="checkbox" value="rejtély", name="option10" id = "option10" class="hide">
+                        <label for = "option10">Rejtély</label>
+                        <input type="checkbox" value="fantasy", name="option11" id = "option11" class="hide">
+                        <label for = "option11">Fantasy</label>
+                        <input type="checkbox" value="time-travel film", name="option12" id = "option12" class="hide">
+                        <label for = "option12">Time-travel film</label>
+                        <input type="checkbox" value="ifjúsági", name="option13" id = "option13" class="hide">
+                        <label for = "option13">Ifjúsági</label>
+                    </p>
+                    <p class="checkboxes">
+                        <input type="checkbox" value="western", name="option14" id = "option14" class="hide">
+                        <label for = "option14">Western</label>
+                        <input type="checkbox" value="háborús film", name="option15" id = "option15" class="hide">
+                        <label for = "option15">Háborús film</label>
+                        <input type="checkbox" value="tragikomédia", name="option16" id = "option16" class="hide">
+                        <label for = "option16">Tragikomédia</label>  
+                    </p>
+                    <p class="checkboxes">              
+                        <input type="checkbox" value="haverfilm", name="option17" id = "option17" class="hide">
+                        <label for = "option17">Haverfilm</label>
+                        <input type="checkbox" value="börtönfilm", name="option18" id = "option18" class="hide">
+                        <label for = "option18">Börtönfilm</label>
+                        <input type="checkbox" value="irodalmi adaptáció", name="option19" id = "option19" class="hide">
+                        <label for = "option19">Irodalmi adaptáció</label>
+                    </p>
+                        <p class="checkboxes">
+                        <input type="checkbox" value="regény alapján készült", name="option20" id = "option20" class="hide">
+                        <label for = "option20">Regény alapján készült</label>
+                        <input type="checkbox" value="könyv alapján készült", name="option21" id = "option21" class="hide">
+                        <label for = "option21">Könyv alapján készült</label>
+                    </p>
+                    <p class="checkboxes">
+                        <input type="checkbox" value="felnőttéválás-történet", name="option22" id = "option22" class="hide">
+                        <label for = "option22">Felnőttéválás-történet</label>
+                        <input type="checkbox" value="életrajzi film", name="option23" id = "option23" class="hide">
+                        <label for = "option23">Életrajzi film</label>
+                        <input type="checkbox" value="flashback-film", name="option24" id = "option24" class="hide">
+                        <label for = "option24">Flashback-film</label>
+                    </p>
+                    <p class="checkboxes">
+                        <input type="checkbox" value="posztapokaliptikus film", name="option25" id = "option25" class="hide">
+                        <label for = "option25">Posztapokaliptikus film</label>
+                        <input type="checkbox" value="disztópikus film", name="option26" id = "option26" class="hide">
+                        <label for = "option26">Disztópikus film</label>
+                        <input type="checkbox" value="gengszterfilm", name="option27" id = "option27" class="hide">
+                        <label for = "option27">Gengszterfilm</label>  
+                    </p>
+                    <p class="checkboxes">
+                        <input type="checkbox" value="pszichothriller", name="option28" id = "option28" class="hide">
+                        <label for = "option28">Pszichothriller</label>                
+                        <input type="checkbox" value="musical", name="option29" id = "option29" class="hide">
+                        <label for = "option29">Musical</label>
+                        <input type="checkbox" value="sportfilm", name="option30" id = "option30" class="hide">
+                        <label for = "option30">Sportfilm</label>
+                        <input type="checkbox" value="disztópikus film", name="option31" id = "option31" class="hide">
+                        <label for = "option31">Disztópikus film</label>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="Keresés" onclick="Keres()"></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <ul id = "filmek"></ul></td>
+            </tr>
+        </table>
+
+        <div id = "footer">
+            <div id = "elsolink">
+                <a href="index.html"><input type="button" value="Oldalválasztó"></a>
+            </div>
+            <div id = "ora">
+                <p class = "stopper" id = "hour">00</p> <p> : </p> <p class = "stopper" id = "minute">00</p> <p> : </p> <p class = "stopper" id = "second">00</p>
+            </div>
+            <div id = "masodiklink">
+                <a href="csapat.html"><input type="button" value="Csapat"></a>
+            </div>
+        </div>
+
+        <script src="filmadatok.js"></script>
+        <script src="film.js"></script>
+    </body>
+</html>

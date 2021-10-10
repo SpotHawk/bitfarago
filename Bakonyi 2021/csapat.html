@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type = "text/css" href="csapat_style.css" rel="stylesheet">
+        <link type="image/png" href="favicon.png" rel="icon">
+        <title>3B 2021</title>
+    </head>
+    <body>
+        <div id = "header">
+            <p>POGramozók</p>
+            <p id = "iskola">Zalaegerszegi Szakképzési Centrum Keszthelyi Asbóth Sándor Technikum, Szakképző Iskola és Kollégium</p>
+            <p id = "tanar">Felkészítő tanár: Szücsné Rudolf Andrea</p>
+            <hr/>
+        </div>
+        <table>
+            <tr id = "nevek">
+                <td>Czinderi Dávid</td>
+                <td>Németh Patrik</td>
+                <td>Nagy Gergő</td>
+            </tr>
+            <tr>
+                <td><img src="david.jpg"></td>
+                <td><img src="patrik.jpg"></td>
+                <td><img src="gergo.jpg"></td>
+            </tr>
+            <tr">
+                <td><input type="button" value="Rólam" onclick="Davidrol()"></td>
+                <td><input type="button" value="Rólam" onclick="Patrikrol()"></td>
+                <td><input type="button" value="Rólam" onclick="Gergorol()"></td>
+            </tr>
+            <tr id = "leiras">
+                <td id = "david"></td>
+                <td id = "patrik"></td>
+                <td id = "gergo"></td>
+            </tr>
+        </table>
+
+        <div id = "galeria">
+            <div id = "kepek">
+
+            </div>
+            <div id = "lapoz">
+                <input type="button" value="Lapozz" onclick="Lapoz()">
+            </div>
+        </div>
+        <div id = "footer">
+            <div id = "elsolink">
+                <a href="index.html"><input type="button" value="Oldalválasztó"></a>
+            </div>
+            <div id = "ora">
+                <p class = "stopper" id = "hour">00</p> <p> : </p> <p class = "stopper" id = "minute">00</p> <p> : </p> <p class = "stopper" id = "second">00</p>
+            </div>
+            <div id = "masodiklink">
+                <a href="filmajanlo.html"><input type="button" value="Filmajánló"></a>
+            </div>
+        </div>
+
+        <script src="team.js"></script>
+    </body>
+</html>

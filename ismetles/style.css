@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: rgb(48, 48, 48);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 143, 231);
+}
+header{
+    text-align: center;
+    margin: 2%;
+}
+.container{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    background: lightsteelblue;
+    padding: 3rem;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+.regbej
+{
+    position: relative;
+    background: rgb(0, 143, 231);
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+}
+#user-form label
+{
+    color:black;
+    display: block;
+}
+input{
+    margin-bottom: 5px;
+}
+.regbejv
+{
+    background: grey;
+    width: 20rem;
+    height: 2rem;
+    margin-top: 0.5cm;
+    border-radius: 10px;
+    border:none;
+    color:white;
+    
+}
+
+.errorMsg{
+    color: red;
+    background: grey;
+    border-radius: 10px;
+    padding: 3px;
+    text-align: center;
+}

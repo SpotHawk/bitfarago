@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ido"><script>d=new Date();
+        document.querySelector('#ido').innerHTML=d.getHours()+':'+d.getMinutes()+':'+d.getSeconds();</script></p>
+    <button type="button" onclick="csere()">Patrik</button>
+    <script>
+        function csere()
+        {
+            document.querySelector('#ido').remove;
+            document.querySelector('#ido').innerHTML='<img src="patrik.jpg">';
+        }
+    </script>
+</body>
+</html>

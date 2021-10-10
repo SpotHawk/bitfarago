@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div  id="content">
+    </div>
+    <input type="button" value="Bekérés" onclick="bekeres()">
+    <script>
+        function bekeres()
+        {
+            let szamok=new Array();
+            for(let i=0;i<5;i++)
+            {
+                let beker=prompt("Kérem adjon meg egy számot");
+                szamok[i]=parseInt(beker);
+            }
+            let negyzetek=new Array();
+            for(let j=0;j<szamok.length;j++)
+            {
+                negyzetek[j]=Math.pow(szamok[j],2);
+            }
+            for(let k=0;k<negyzetek.length;k++)
+            {
+                document.querySelector('#content').innerHTML+=(negyzetek[k]+' ');
+            }
+        }
+    </script>
+</body>
+</html>

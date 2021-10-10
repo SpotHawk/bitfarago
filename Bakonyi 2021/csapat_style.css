@@ -1,0 +1,129 @@
+html, body{
+    margin: 0%;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    height: 138%;
+}
+#header{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 40px;
+}
+hr{
+    width: 85%;
+}
+input[type="button"]{
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+input[type="button"]:hover{
+    background-color: white;
+    color: black;
+}
+
+/*      ---------------------------------------------------------------     */
+
+table{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 35%;
+}
+td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center; 
+}
+img{
+    width: 325px;
+    height: 400px;
+    border: 1px solid white;
+}
+#nevek{
+    font-size: 30px;
+}
+#iskola{
+    font-size: 25px;
+}
+#tanar{
+    font-size: 20px;   
+}
+#david, #patrik, #gergo{
+    font-size: 20px;
+}
+
+/*      ---------------------------------------------------------------     */
+
+#galeria{
+    position: absolute;
+    width: 35%;
+    height: 60%;
+    left: 32.5%;
+    top: 120%;
+}
+#lapoz{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    top: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#kepek{
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*      ---------------------------------------------------------------     */
+
+#footer{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 180%;
+}
+#elsolink{
+    position: absolute;
+    width: 34%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+#masodiklink{
+    position: absolute;
+    left: 67%;
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+#ora{
+    position: absolute;
+    width: 34%;
+    left: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
