@@ -9,25 +9,23 @@
         <title>3B 2021</title>
     </head>
     <body>
-        
-        <div id = "header">
-            <p>POGramozók</p>
-            <hr/>
-        </div>
-
-        <div id = "menu">
-            <p>
-                <input type="button" value="Alap pálya" onclick="AlapPalya()">
-                <input type="button" value="Pálya generálás" onclick="RandomPalya()">
-                <input type="button" value="Segítség" onclick="Segitseg()">
-            </p>
-            <p id = "erzekelohelyzete">A legközelebbi érzékelő: </p>
-            <p id = "messagebox"></p>
-        </div>
-
-        <table id = "mezo">
-        </table>
-
+            <div id = "header">
+                <p>POGramozók</p>
+            </div>
+            <div id = "menu">
+                <p id="navbuttons">
+                    <input type="button" value="Alap pálya" onclick="AlapPalya()">
+                    <input type="button" value="Pálya generálás" onclick="RandomPalya()">
+                    <input type="button" value="Segítség" onclick="Segitseg()">
+                </p>
+                <p id = "messagebox"></p>
+            </div>
+            <div id="content">
+                <div id = "erzekelohelyzete">
+                    A legközelebbi érzékelő helyzete:
+                </div>
+                <div id="tabla"><table id = "mezo"></table></div>
+            </div>
         <script src="main.js"></script>
     </body>
 </html>

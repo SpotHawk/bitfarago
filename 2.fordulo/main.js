@@ -28,6 +28,7 @@ function AlapPalya() {
     Alapertelmezett();
 
     let jatekmezo = document.querySelector("#mezo");
+    let tabla=document.querySelector("#tabla");
     if (jatekmezo != null && jatekmezo != undefined) {
         jatekmezo.remove();
     }
@@ -35,7 +36,7 @@ function AlapPalya() {
     jatekmezo = document.createElement("table");
     jatekmezo.id = "mezo";
 
-    document.body.appendChild(jatekmezo);
+    tabla.appendChild(jatekmezo);
 
     for (let i = 0; i < 15; i++) {
         const sor = document.createElement("TR");
