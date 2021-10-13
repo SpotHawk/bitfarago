@@ -13,17 +13,19 @@
                 <p>POGramozók</p>
             </div>
             <div id = "menu">
-                <p id="navbuttons">
-                    <input type="button" value="Alap pálya" onclick="AlapPalya()">
-                    <input type="button" value="Pálya generálás" onclick="RandomPalya()">
-                    <input type="button" value="Segítség" onclick="Segitseg()">
-                </p>
+                <ul id="navbuttons">
+                    <li class="navb"><input type="button" value="Alap pálya" onclick="AlapPalya()"></li>
+                    <li class="navb"><input type="button" value="Pálya generálás" onclick="RandomPalya()"></li>
+                    <li class="navb"><input type="button" value="Segítség" onclick="Segitseg()"></li>
+                </ul>
+            </div>
+            <div id="uzenet">
                 <p id = "messagebox"></p>
             </div>
+            <div id = "erzekelohelyzete">
+                A legközelebbi érzékelő helyzete:
+            </div>
             <div id="content">
-                <div id = "erzekelohelyzete">
-                    A legközelebbi érzékelő helyzete:
-                </div>
                 <div id="tabla"><table id = "mezo"></table></div>
             </div>
         <script src="main.js"></script>

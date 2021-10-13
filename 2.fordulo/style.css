@@ -7,36 +7,49 @@ html, body{
 #header{
     width: 100%;
     height: auto;
-    max-height: 50px;
     text-align: center;
     font-size: 40px;   
 }
 #menu{
     position: relative;
-    width: 70%;
-    height: auto;
+    width: 100%;
     top: 0;
-    left: 15%;
+    justify-content: center;
+    align-items: center;
     font-size: 25px;
     margin: 0;
+    z-index: 999;
 }
-#menu #navbuttons{
-    display: flex;
+#navbuttons{
     position: absolute;
+    display:inline-table;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
+    margin: 0px;
+    text-align: center;
+}
+.navb{
+    display:inline;
+    list-style: none;
+}
+#uzenet{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    top: 50px;
+    margin: 10px;
+    text-align: center;
 }
 #content{
     display:inline-block;
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 70%;
-    top: 30%;
 }
 #tabla{
+    display: block;
     position: relative;
-    width: 80%;
-    top:0;
+    top:10rem;
     left:0;
 }
 input[type="button"]{
@@ -50,6 +63,7 @@ input[type="button"]{
     padding-bottom: 5px;
     margin-right: 15px;
     margin-left: 15px;
+    margin-bottom: 5px;
     cursor: pointer;
     transition: 0.2s background-color linear;
 }
@@ -59,15 +73,16 @@ input[type="button"]:hover{
 }
 #erzekelohelyzete{
     position: relative;
-    width: 20%;
-    left: 55%;
-    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
     text-align: center;   
 }
 #mezo{
-    position: absolute;
-    top: 20%;
-    left: 10%;
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     cursor: pointer;
 }
 #mezo td{
