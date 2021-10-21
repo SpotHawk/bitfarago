@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" href="style.css" rel="stylesheet">
+        <link type="image/png" href="favicon.png" rel="icon">
+        <title>B3 2021</title>
+    </head>
+    <body>
+        <div id = "header">
+            <p>Osonó hacker</p>
+            <hr/>
+        </div>
+
+        <!--------FŐOLDAL-------->
+
+        <div id = "menu">
+            <p class = "cim">
+                Pálya kiválasztása
+            </p>
+           <p>
+               Alap pálya: 15x15 cella, 9 érzékelővel - 
+               Random: 5x5 és 15x15 cella közötti véletlen pálya, az érzékelők száma a pályamérettől függ 
+           </p>
+            <p id = "gombok">
+                <input type="button" value="Alap" onclick="AlapPalya()">
+                <input type="button" value="Random" onclick="RandomPalya()">
+            </p>
+            <hr/>
+            <p class = "cim">A játékról: </p>
+            <p>
+                Adott egy pálya, a hackerrel el kell jutnunk a szerverterem bejáratáig. A pálya egyes celláira kattintva haladhatunk oldal illetve átlós irányba, <br/>egyszerre egy cellányit.
+                A pályán találhatók mozgásérzékelők, amelyek oldal illetve átlós irányban egy celláig képesek érzékelni a játékos mozgását. <br/>
+                Az oldal mutatja, hogy milyen messze van a legközelebbi érzékelő, azonban nem mondja meg hogy az pontosan milyen irányba található.  <br/>
+                Lehetőség van segítséget kérni, amit egy játékban csak egyszer használhatunk fel. Ez megmutatja a legközelebbi érzékelő pontos helyzetét. <br/>
+                Ha belépünk egy érzékelő zónájába, akkor a játék véget ér. Amennyiben sikeresen kikerüljük őket és eljutunk a szerverterem bejratáig, a játékot megnyertük. <br/>
+                Lehetőség van egy előre megadott pályán, illetve véletlenszerűen generált pályákon játszani.
+            </p>
+        </div>
+
+        <!--------JÁTÉKOLDAL-------->
+
+        <div id = "menu2">
+            <p>
+                <input type="button" value="Segítség" onclick="Segitseg()">
+                <input type="button" value="Új játék" onclick="Uj_jatek()">
+            </p>
+            <p id = "erzekelotxt"></p>
+            <p id = "messagebox"></p>
+        </div>
+                        
+        <table id = "mezo"></table>
+
+        <script src="elso.js"></script>
+        <script src="masodik.js"></script>
+    </body>
+</html>

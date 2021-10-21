@@ -1,0 +1,143 @@
+html, body{
+    margin: 0%;
+    color: white;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    text-align: center;
+    font-size: 30px;
+}
+hr{
+    width: 60%;
+}
+input[type="button"]{
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: background-color 0.2s linear;
+}
+input[type="button"]:hover{
+    background-color: white;
+    color: black;
+}
+#menu{
+    position:absolute;
+    top: 150px;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+}
+/*----------------------------------------*/
+.cim{
+    font-size: 30px;
+}
+#gombok{
+    padding-bottom: 3%;
+}
+#mezo{
+    position: absolute;
+    display: inline-block;
+    top: 370px;
+    cursor: pointer;
+}
+#mezo td{
+    border-style: none;
+    background-color: gray;
+    padding: 15px;
+}
+#messagebox{
+    text-align: center;
+    margin-top: 50px;
+}
+#erzekelohelyzete{
+    text-align: center;
+}
+#menu2{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 150px;
+    font-size: 25px;
+    text-align: center;
+}
+
+mark{
+    background-color: black;
+    color: red;
+}
+
+#hackpose{
+  transition: background-color .2s ease-in-out;
+}
+
+.animate{
+    animation-name: myAnim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes myAnim {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateY(-45px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }

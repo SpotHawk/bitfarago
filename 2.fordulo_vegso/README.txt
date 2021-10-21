@@ -1,0 +1,1 @@
+Az eredeti javascript file túl nagyra sikeredett (~800 sor) amit a windows defender vírusként észlelt, emiatt két részre lett szedve az eredeti file.
