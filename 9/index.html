@@ -7,6 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="eredmeny"></div>
+    <input type="button" value="Megold" onclick="megold()">
+    <script>
+        function megold()
+        {
+            const ora=parseInt(prompt("Adjon meg egy órát!"));
+            const perc=parseInt(prompt("Adjon meg egy percet!"));
+            console.log(ora);
+            
+            console.log(perc);
+            if(ora>=7 && perc>=30 && ora<=16)
+            {
+                document.querySelector("#eredmeny").innerHTML="Munkaidő van még!";
+            }
+            else if(ora==16 && perc<=15)
+            {
+                document.querySelector("#eredmeny").innerHTML="Munkaidő van még!";
+            }
+            else
+            {
+                document.querySelector("#eredmeny").innerHTML="Munkaidő lejárt!";
+            }
+        }
+    </script>
 </body>
 </html>

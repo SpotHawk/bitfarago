@@ -7,6 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="eredmeny"></div>
+    <input type="button" value="Megold" onclick="megold()">
+    <script>
+        function megold()
+        {
+            let bekera=prompt("Adja meg az 'a' értékét!");
+            let a=parseFloat(bekera);
+            let bekerb=prompt("Adja meg az 'b' értékét!");
+            let b=parseFloat(bekerb);
+            let bekerc=prompt("Adja meg az 'c' értékét!");
+            let c=parseFloat(bekerc);
+            let gyokalatt=b*b-4*a*c;
+            let x1=(((-b) + Math.sqrt(Math.pow(b,2)) - (4*a*c))/(2*a));
+            let x2=(((-b) - Math.sqrt(Math.pow(b,2)) - (4*a*c))/(2*a));
+            document.querySelector("#eredmeny").innerHTML="x1="+x1+"<br/>";
+            document.querySelector("#eredmeny").innerHTML+="x2="+x2;
+        }
+    </script>
 </body>
 </html>

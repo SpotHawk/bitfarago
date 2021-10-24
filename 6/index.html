@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="content"></div>
+    <input type="button" value="Bekérés" onclick="beker()">
+    <script>
+        function beker()
+        {
+            let bekeres=prompt("Adjon meg egy nem egész számot!");
+            document.querySelector("#content").innerHTML+=(Math.round(parseInt(bekeres)));
+        }
+    </script>
 </body>
 </html>

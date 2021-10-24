@@ -7,6 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="eredmeny"></div>
+    <input type="button" value="Megold" onclick="megold()">
+    <script>
+        function megold()
+        {
+            let kseb=(parseInt(prompt("Adja meg a hajítás sebességét!")))/3.6;
+            let hajsz;
+            do
+            {
+                hajsz=parseInt(prompt("Ajda meg a hajítás szögét!"));
+            }
+            while(hajsz<=0 || hajsz>=90);
+            let maxm=((Math.pow(kseb,2))*(Math.pow(Math.sin(hajsz*(Math.PI/180)),2)))/(2*9.81);
+            let tav=( ( Math.pow(kseb,2) ) *Math.sin( 2*( hajsz*( Math.PI/180 ) ) ) )/9.81;
+            document.querySelector("#eredmeny").innerHTML="Dobás távolsága="+tav+"m"+"<br/>";
+            document.querySelector("#eredmeny").innerHTML+="Dobás maximális magassága="+maxm+"m";
+        }
+    </script>
 </body>
 </html>
