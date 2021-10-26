@@ -67,6 +67,41 @@ input[type="button"]:hover{
     text-align: center;
 }
 
+div.slide-left {
+    width:100%;
+    overflow:hidden;
+}
+div.slide-left p {
+    margin:0;
+    animation: slide-left 0.5s;
+}
+  
+@keyframes slide-left {
+    from {
+      margin-left: 100%;
+      width: 200%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+div.slide-out {
+    width:100%;
+    overflow:hidden;
+}   
+
+div.slide-out p{
+    margin: 0;
+    animation: slide-out 0.5s;
+}
+
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
 
 @media(max-width:1035px)
 {
