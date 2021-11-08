@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" href="style.css" rel="stylesheet">
+        <link type="image/png" href="favicon.png" rel="icon">
+        <title>3B 2021</title>
+    </head>
+    <body>
+        <div id = "header">
+            <p>Osonó hacker part 2</p>
+            <hr/>
+        </div>
+
+        <!--------FŐOLDAL-------->
+
+        <table id = "menu">
+            <tr>
+                <td colspan="5" id = "cim">Nehézség kiválasztása</td>
+            </tr>
+                <tr>
+                    <td>
+                        <p id = "gombok">
+                            <input type="button" value="Könnyű" class="gombok" onclick="Konnyu()" onmouseover="KonnyuLeiras()" onmouseleave="Torol()">
+                            <input type="button" value="Közepes" class="gombok" onclick="Kozepes()" onmouseover="KozepesLeiras()" onmouseleave="Torol()">
+                            <input type="button" value="Nehéz" class="gombok" onclick="Nehez()" onmouseover="NehezLeiras()" onmouseleave="Torol()">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><div id = "leiras"></div><div id="vonal"></div></td>
+                </tr>
+        </table>
+        <!--------JÁTÉKOLDAL-------->
+
+        <div id = "jatekmenu">
+            <p>
+                <input type="button" value="Segítség" onclick="Segitseg()">
+                <input type="button" value="Új játék" onclick="Uj_Jatek()">
+            </p>
+            <p id = "pontszam">Pontszám: <!--span a + v. - 1hez--><span id='egy'></span></p>
+            <p id = "timer">PRÓBA</p>
+        </div>
+
+        <canvas id="jatekmezo" width="750px" height="500px">
+
+        </canvas>
+
+        <p id = "proba">fa</p>
+        <script src="main.js"></script>
+    </body>
+</html>
